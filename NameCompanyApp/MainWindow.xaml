@@ -1,0 +1,198 @@
+﻿<Window x:Class="NameCompanyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NameCompanyApp"
+        mc:Ignorable="d"
+            Title="" Height="650" Width="800" Background="#FF3BA7B5">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Menu Width="800" Height="40" Grid.Row="1" Grid.ColumnSpan="9" Background="#FF3BA7B5" >
+            <MenuItem Header="Orders">
+                <MenuItem Header="fsgsf"/>
+            </MenuItem>
+            <MenuItem Header="Customers">
+                <MenuItem Header="jhjvj"/>
+            </MenuItem>
+            <MenuItem Header="Invoices"/>
+            <MenuItem Header="Stock"/>
+        </Menu>
+
+        <Menu Width="133" Height="40" Grid.Row="1" Grid.ColumnSpan="2" Background="#FF3BA7B5" Grid.Column="7" HorizontalAlignment="Left" Margin="45,0,0,47" Grid.RowSpan="2">
+            <MenuItem Header="+">
+                <MenuItem Header="fsgsf"/>
+            </MenuItem>
+            <MenuItem Header="&#9998;">
+                <MenuItem Header="jhjvj"/>
+            </MenuItem>
+            <MenuItem Header="&#9000;"/>
+            <MenuItem Header="&#8943;"/>
+        </Menu>
+        <Label Content="Company Name" FontSize="22" Grid.Row="0" Grid.ColumnSpan="9" FontFamily="Sitka Subheading" HorizontalAlignment="Left" />
+
+        <!--<Button Grid.Column="0" Grid.Row="1" Content="Orders" FontSize="16"  Background="#FFABE4EC"/>
+    <Button Grid.Column="1" Grid.Row="1" Content="Customers" FontSize="16"  Background="#FFABE4EC"/>
+    <Button Grid.Column="2" Grid.Row="1" Content="Invoices" FontSize="16"  Background="#FFABE4EC"/>
+    <Button Grid.Column="3" Grid.Row="1" Content="Stock" FontSize="16"  Background="#FFABE4EC"/>
+    <Label Grid.Column="4" Grid.Row="1"/>
+    <Button Grid.Column="5" Grid.Row="1" Content="+" FontSize="20" Background="#FFABE4EC" />
+    <Button Grid.Column="6" Grid.Row="1" Content="&#9998;" FontSize="20"  Background="#FFABE4EC"/>
+    <Button Grid.Column="6" Grid.Row="1" Content="&#128686;" FontSize="20"  Background="#FFABE4EC"/>
+    <Button Grid.Column="7" Grid.Row="1" Content="&#9000;" FontSize="20"  Background="#FFABE4EC"/>
+    <Button Grid.Column="8" Grid.Row="1" Content="&#8943;" FontSize="20" Background="#FFABE4EC"/>-->
+
+        <Label Grid.ColumnSpan="4" Grid.Row="2" Content="Customer Name" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label Grid.Column="5" Grid.ColumnSpan="4" Grid.Row="2" Content="Associate" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4" Background="#FFE4E4E4"/>
+        <TextBlock Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="4" Background="#FFE4E4E4"/>
+
+        <Label Grid.ColumnSpan="4" Grid.Row="4" Content="Phone Number" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label Grid.Column="5" Grid.ColumnSpan="4" Grid.Row="4" Content="Phone Number" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
+        <TextBlock Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="4" Background="#FFE4E4E4"/>
+        <TextBlock Grid.Column="5" Grid.Row="5" Grid.ColumnSpan="4" Background="#FFE4E4E4"/>
+
+        <Label Grid.ColumnSpan="4" Grid.Row="6" Content="Address" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="4" Background="#FFE4E4E4" Content="Address" VerticalContentAlignment="Center" Height="36"  FontSize="14" VerticalAlignment="Stretch"/>
+
+        <Label Grid.Column="5" Grid.ColumnSpan="4" Grid.Row="6" Content="Target install Date" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <ComboBox Grid.Row="7" Grid.Column="5" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="January"/>
+            <ComboBoxItem Content="February"/>
+            <ComboBoxItem Content="March"/>
+            <ComboBoxItem Content="April"/>
+            <ComboBoxItem Content="May"/>
+            <ComboBoxItem Content="June"/>
+            <ComboBoxItem Content="July"/>
+            <ComboBoxItem Content="August"/>
+            <ComboBoxItem Content="September"/>
+            <ComboBoxItem Content="October"/>
+            <ComboBoxItem Content="November"/>
+            <ComboBoxItem Content="December"/>
+        </ComboBox>
+
+        <ComboBox Grid.Row="7" Grid.Column="6" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+        </ComboBox>
+
+        <ComboBox Grid.Row="7" Grid.Column="7" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="2020"/>
+            <ComboBoxItem Content="2021"/>
+            <ComboBoxItem Content="2022"/>
+            <ComboBoxItem Content="2023"/>
+            <ComboBoxItem Content="2024"/>
+        </ComboBox>
+
+        <Label Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="4" Background="#FFE4E4E4" Content="Address 2" VerticalContentAlignment="Center" Height="36"  FontSize="14" VerticalAlignment="Stretch"/>
+
+        <Label Grid.Column="0" Grid.Row="9" Grid.ColumnSpan="2" Background="#FFE4E4E4" Content="City" VerticalContentAlignment="Center" Height="36"  FontSize="14" VerticalAlignment="Stretch"/>
+
+        <ComboBox Grid.Row="9" Grid.Column="3" SelectedIndex="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="США"/>
+            <ComboBoxItem Content="Россия"/>
+            <ComboBoxItem Content="Казахстан"/>
+            <ComboBoxItem Content="Узбекистан"/>
+            <ComboBoxItem Content="Киргизия"/>
+        </ComboBox>
+
+        <Label Grid.Column="5" Grid.ColumnSpan="4" Grid.Row="9" Content="Install Time" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <ComboBox Grid.Row="10" Grid.Column="5" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+        </ComboBox>
+
+        <ComboBox Grid.Row="10" Grid.Column="6" SelectedIndex="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="20"/>
+            <ComboBoxItem Content="25"/>
+            <ComboBoxItem Content="30"/>
+            <ComboBoxItem Content="35"/>
+            <ComboBoxItem Content="40"/>
+            <ComboBoxItem Content="45"/>
+            <ComboBoxItem Content="50"/>
+        </ComboBox>
+
+        <ComboBox Grid.Row="10" Grid.Column="7" SelectedIndex="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="14">
+            <ComboBoxItem Content="AM"/>
+            <ComboBoxItem Content="PM"/>
+        </ComboBox>
+
+        <Label Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="11" Background="#FFE4E4E4" Content="Zip Code" FontSize="14" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
+        <!--<Menu>
+        <MenuItem Header="hvkj">
+            <MenuItem Header="jhvj"/>
+        </MenuItem>
+        <MenuItem Header="kjvkjvk">
+            <MenuItem Header="jhjvj"/>
+        </MenuItem>
+    </Menu>-->
+
+
+    </Grid>
+</Window>
